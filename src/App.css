@@ -1,38 +1,169 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #c5f4f2;
+  margin: 0;
+  padding: 0;
+  font-size:1.2em;
+  
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color:#0b5650;
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Form Styles */
+form {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+input[type="text"], textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1a8d87;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #186965;
+}
+
+/* Search Bar Styles */
+input[type="text"][placeholder="Search tasks..."] {
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  margin-left:5px;
+  margin-right:5px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Task List Styles */
+.todo-item {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.todo-item.done {
+  background-color: #bacecc;
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.todo-item div {
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.todo-item p.task-details {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.todo-item p.task-timestamp {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Edit Button Styles */
+.todo-item button {
+  background-color: #19827a;
+  padding: 6px 12px;
+  border: none;
   color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-item button:hover {
+  background-color: #27beb2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Edit Form Styles */
+.todo-item input[type="text"], .todo-item textarea {
+  width: 70%;
+  margin: 5px 0;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.todo-item button[type="submit"] {
+  background-color: #ffc107;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.todo-item button[type="submit"]:hover {
+  background-color: #e0a800;
+}
+.todoList{
+  background-color:#007bff;
+}
+
+
+@media screen and (min-width:700px){
+  form{
+    margin-left:8%;
+    margin-right:8%;
   }
-  to {
-    transform: rotate(360deg);
+  .todo-item {
+    background: #fff;
+    padding: 20px;
+    margin-left:8%;
+    margin-right:8%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+ 
 }
