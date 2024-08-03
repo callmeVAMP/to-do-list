@@ -1,4 +1,4 @@
-To-Do List is a web app that takes keeps the record of list of tasks user wants to do. It is easy and efficient to use with options to edit and mark the task as done.
+To-Do List is a web app that keeps the record of list of tasks user want to do. It is easy and efficient to use with options to edit and mark the task as done.
 ### `npm start`
 
 Runs the app in the development mode.\
